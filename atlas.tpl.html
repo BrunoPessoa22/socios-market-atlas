@@ -123,6 +123,11 @@ ul.tick.off li:before{background:var(--mute)}
 .shape p{font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:13.2px;
   line-height:1.42;letter-spacing:-.005em;color:var(--white)}
 .shape p .amp{color:var(--orange)}
+.supply{margin-top:10px;padding:8px 0 0;border-top:1px dashed var(--lineS);
+  font-size:10.4px;line-height:1.55;color:var(--dim)}
+.supply .w{font-family:'Space Mono',monospace;font-size:8.6px;letter-spacing:.14em;
+  text-transform:uppercase;color:var(--orange);margin-right:8px}
+.supply b{color:var(--white)}
 .facts{display:grid;grid-template-columns:1fr 1fr;gap:0 24px;margin-top:12px}
 .facts ul.tick li{margin-bottom:6px;font-size:10.4px}
 .mk-open{margin-top:11px;font-size:10.2px;line-height:1.5;color:var(--faint)}
@@ -220,10 +225,10 @@ html,body,.doc{-webkit-print-color-adjust:exact;print-color-adjust:exact}
   <div class="hero">
     <div class="kick">Market Access Atlas</div>
     <h1>The product is global<span class="dot">.</span><br><span class="thin">The shape is local.</span></h1>
-    <p class="lead">Socios Equity Tokens are one product — a fan's small tokenized stake in their club. But <b>no securities regime passports worldwide</b>, so in each market the product must take the shape local law rewards: equity where equity is open, a fixed-income mirror where it is not, a geo-fence where nothing is. This atlas gives, market by market, the status today and the one-line shape that makes us sellable there.</p>
+    <p class="lead">Socios Equity Tokens are one product — a fan's small tokenized stake in their club. But <b>no securities regime passports worldwide</b>, so in each market the product must take the shape local law rewards: equity where equity is open, a fixed-income mirror where it is not, a geo-fence where nothing is. And every country is <b>two markets at once</b>: a supply market — its clubs, tokenizable or not — and a demand market — its fans, sellable-to or not. The two answers are independent, and the gap between them is where the strategy lives.</p>
     <div class="askbox">
       <span class="who">How to read each market</span>
-      A short status of the rules as they stand (verified 26 Aug 2026), then the boxed line: <b>the shape it must take</b> — what has to be true, or built, for a local retail fan to legally buy. Tiers rank readiness for a retail lane, not attractiveness of the fanbase.
+      A short status of the rules as they stand (verified 26 Aug 2026), then the boxed line: <b>the shape it must take</b> — what has to be true, or built, for a local retail fan to legally buy — and beneath it, <b>as supply</b>: whether that country's own clubs can be tokenized, regardless of where the tokens are sold. Tiers rank readiness for a retail selling lane, not attractiveness of the fanbase.
     </div>
   </div>
 
@@ -244,6 +249,7 @@ html,body,.doc{-webkit-print-color-adjust:exact;print-color-adjust:exact}
     <a href="#uae"><b>AE</b> UAE</a>
     <a href="#jp"><b>JP</b> Japan</a>
     <a href="#sghk"><b>SG·HK</b> Singapore &amp; Hong Kong</a>
+    <a href="#twomarkets"><b>→</b> Tokenize vs sell</a>
     <a href="#ranking"><b>→</b> Where to go first</a>
     <a href="#steps"><b>→</b> Next steps</a>
   </div>
@@ -297,6 +303,84 @@ html,body,.doc{-webkit-print-color-adjust:exact;print-color-adjust:exact}
     </div>
   </section>
 
+  <section id="twomarkets">
+    <div class="sec-head"><div class="sec-n">03</div><h2>Two markets in every market — tokenize vs sell</h2></div>
+    <p class="sec-sub">Selling rules attach to where the <b>buyer resides</b>. Tokenization feasibility attaches to where the <b>club is incorporated</b>. These are independent axes — and a fanbase is never confined to its home jurisdiction.</p>
+    <div class="ledger">
+      <div class="led"><div class="led-n">1</div><div class="led-b"><b>Selling rules attach to the buyer's residence, not nationality.</b> The EU Prospectus Regulation triggers on offers "within a Member State" — territorial by construction. A Turkish citizen living in Berlin is a German retail investor; a Mexican family in Texas buys under US law. No securities regime follows its citizens abroad.</div></div>
+      <div class="led"><div class="led-n">2</div><div class="led-b"><b>So a fenced home market does not fence its fanbase.</b> The SPK's perimeter is offers made in Türkiye; its diaspora — millions of residents of open markets — sits legally outside it. The geo-fence we owe the home regulator and the offer we make to its diaspora are two different acts in two different jurisdictions.</div></div>
+      <div class="led"><div class="led-n">3</div><div class="led-b"><b>The wrapper's domicile decides which regulator owns the offer.</b> One trap proves the rule: Decree 32 art. 15(b) — securities issued by <i>Turkish-resident</i> entities and sold abroad need Capital Markets Board registration. The SPV must sit outside the fenced country, holding the club economics; then the only regulator in the room is the buyer's.</div></div>
+    </div>
+    <div class="diagram" style="margin-top:16px">
+      <svg viewBox="0 0 700 190" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Cross-flow: fenced supply market to offshore SPV to diaspora demand markets">
+        <defs>
+          <marker id="cfar" markerWidth="7" markerHeight="7" refX="6" refY="3.5" orient="auto">
+            <path d="M0,0 L7,3.5 L0,7 z" fill="#FF5132"/>
+          </marker>
+        </defs>
+        <g font-family="'Space Mono',monospace" font-size="8" letter-spacing="1.4" fill="rgba(234,235,235,.56)">
+          <text x="0" y="10">SUPPLY — FENCED MARKET</text>
+          <text x="264" y="10">THE WRAPPER</text>
+          <text x="470" y="10">DEMAND — OPEN MARKETS</text>
+        </g>
+        <rect x="0" y="28" width="216" height="74" fill="#2A2A2A" stroke="rgba(234,235,235,.22)"/>
+        <text x="16" y="52" font-family="'Space Grotesk',sans-serif" font-weight="700" font-size="12" fill="#fff">Home club equity</text>
+        <text x="16" y="69" font-family="'Manrope',sans-serif" font-size="9" fill="rgba(234,235,235,.66)">Listed sportif AS shares — freely</text>
+        <text x="16" y="81" font-family="'Manrope',sans-serif" font-size="9" fill="rgba(234,235,235,.66)">buyable by a foreign SPV (Decree 32)</text>
+        <line x1="216" y1="65" x2="256" y2="65" stroke="#FF5132" stroke-width="1.4" marker-end="url(#cfar)"/>
+        <rect x="260" y="28" width="176" height="74" fill="#1833CB"/>
+        <text x="274" y="50" font-family="'Space Mono',monospace" font-size="8" letter-spacing="1.4" fill="rgba(255,255,255,.72)">NON-TURKISH SPV</text>
+        <text x="274" y="70" font-family="'Space Grotesk',sans-serif" font-weight="700" font-size="12" fill="#fff">Permissioned token</text>
+        <text x="274" y="86" font-family="'Manrope',sans-serif" font-size="9" fill="rgba(255,255,255,.86)">ERC-3643 · buyer's regulator only</text>
+        <line x1="436" y1="52" x2="466" y2="42" stroke="#FF5132" stroke-width="1.4" marker-end="url(#cfar)"/>
+        <line x1="436" y1="78" x2="466" y2="88" stroke="#FF5132" stroke-width="1.4" marker-end="url(#cfar)"/>
+        <rect x="470" y="26" width="230" height="38" fill="#2A2A2A" stroke="#FF5132"/>
+        <text x="483" y="42" font-family="'Space Grotesk',sans-serif" font-weight="700" font-size="10.5" fill="#fff">Diaspora retail — DE · UK · EEA</text>
+        <text x="483" y="56" font-family="'Manrope',sans-serif" font-size="8.6" fill="rgba(234,235,235,.66)">Residents buying under their home rules</text>
+        <rect x="470" y="72" width="230" height="38" fill="#2A2A2A" stroke="rgba(234,235,235,.22)"/>
+        <text x="483" y="88" font-family="'Space Grotesk',sans-serif" font-weight="700" font-size="10.5" fill="#fff">Global fans + professionals</text>
+        <text x="483" y="102" font-family="'Manrope',sans-serif" font-size="8.6" fill="rgba(234,235,235,.66)">Every open lane in this atlas</text>
+        <line x1="108" y1="102" x2="108" y2="140" stroke="rgba(234,235,235,.35)" stroke-width="1.2" stroke-dasharray="3 3"/>
+        <rect x="0" y="140" width="216" height="38" fill="none" stroke="rgba(234,235,235,.22)" stroke-dasharray="3 3"/>
+        <text x="14" y="156" font-family="'Space Grotesk',sans-serif" font-weight="700" font-size="10.5" fill="rgba(234,235,235,.56)">Home retail — geo-fenced</text>
+        <text x="14" y="170" font-family="'Manrope',sans-serif" font-size="8.6" fill="rgba(234,235,235,.42)">Until the SPK activates art. 13 — then it opens</text>
+      </svg>
+    </div>
+    <div class="panel" style="margin-top:16px">
+      <div class="cap">Worked example — Galatasaray without Türkiye</div>
+      <p style="font-size:11.2px;line-height:1.6;color:var(--dim)">A non-Turkish SPV buys a negotiated GSRAY tranche on Borsa Istanbul — free under Decree 32, and the association can sell a tradable block of up to <b>~35% while keeping 15 of 16 board seats</b>. The stake is tokenized on the EU issuance stack and offered where the fans actually live: <b>~1.4M Turkish citizens in Germany</b> (about 3M people of Turkish origin) buy as German retail through the eWpG lane; the UK community buys through the FCA platform lane; the EEA diaspora through ECSPR or a passported prospectus. Türkiye itself stays marketing-geo-fenced until the SPK opens the domestic lane — at which point the same token gains its home market instead of needing to be rebuilt. The SPK is not avoided; it is simply not the regulator of a German offer.</p>
+    </div>
+    <div class="mathstrip">
+      <div class="m"><div class="n">~6M</div><div class="l">Turkish-origin residents of Western Europe — ≈1.4M Turkish citizens in Germany alone (Eurostat, 2025). The Galatasaray and Fenerbahçe fanbases are partly resident inside our most open selling markets.</div></div>
+      <div class="m"><div class="n">37.9M</div><div class="l">Mexican-origin US residents — the largest diaspora lane on earth, sitting inside the Reg CF / Reg A+ demand market while Mexican retail itself stays closed. Liga MX supply, US demand.</div></div>
+      <div class="m"><div class="n">0</div><div class="l">Clubs that have ever run a deliberate, regulated diaspora equity offering at scale. Real Oviedo's global share drive, the Packers' residence-scoped sales, Celtic and Hajduk prove the demand in kind — the lane is legally open and empty.</div></div>
+    </div>
+    <div class="tablewrap">
+    <table>
+      <colgroup><col style="width:13%"><col style="width:15%"><col style="width:15%"><col style="width:57%"></colgroup>
+      <thead><tr>
+        <th>Home market</th><th>Clubs to tokenize<br>(supply)</th><th>Fans to sell to<br>(demand)</th><th class="last">The play</th>
+      </tr></thead>
+      <tbody>
+        <tr><td class="mk">Türkiye</td><td><span class="tier t1">Open</span></td><td><span class="tier t3">Fenced</span></td><td class="last"><b>The flagship cross-flow: tokenize at home, sell abroad.</b> Listed sportif AŞ shares are freely buyable by a foreign SPV; the buyers are the Turkish diaspora — residents of Germany, the UK and the EEA, purchasing under their home rules.</td></tr>
+        <tr><td class="mk">Brazil</td><td><span class="tier t1">Open</span></td><td><span class="tier t1">Wrapper</span></td><td class="last"><b>Both sides of the trade.</b> SAF equity tokenized offshore sells to the world; the domestic fanbase buys the Liqi fixed-income mirror. Deepest supply in the atlas.</td></tr>
+        <tr><td class="mk">Mexico</td><td><span class="tier t2">Partial</span></td><td><span class="tier t3">Closed</span></td><td class="last"><b>The quiet cross-flow.</b> Liga MX stakes are negotiable and tokenizable offshore — and the fanbase's richest segment lives in the US, an open selling market.</td></tr>
+        <tr><td class="mk">Argentina</td><td><span class="tier t3">Closed</span></td><td><span class="tier t2">Rails ready</span></td><td class="last"><b>Türkiye inverted.</b> No club equity exists until the SAD ruling — but the PSAV rails can sell foreign supply to Argentine retail today.</td></tr>
+        <tr><td class="mk">UK</td><td><span class="tier t1">Open</span></td><td><span class="tier t1">Open</span></td><td class="last">Full stack in one country: free supply, an authorised retail platform, proven fan demand — plus a global-fanbase export hub for Premier League clubs.</td></tr>
+        <tr><td class="mk">Portugal</td><td><span class="tier t1">Open</span></td><td><span class="tier t1">Open</span></td><td class="last">Listed and private SAD supply into any EEA lane; the diaspora adds a second demand pool abroad.</td></tr>
+        <tr><td class="mk">Italy</td><td><span class="tier t1">Open</span></td><td><span class="tier t1">Open</span></td><td class="last">SpA stakes tokenize freely for unlisted clubs; sell at home via ECSPR and to the diaspora across open markets.</td></tr>
+        <tr><td class="mk">France</td><td><span class="tier t1">Open</span></td><td><span class="tier t1">Open</span></td><td class="last">SASP supply into the AMF-licensed crowdfunding lane; DNCG vets finances, not nationality.</td></tr>
+        <tr><td class="mk">Spain</td><td><span class="tier t2">Partial</span></td><td><span class="tier t1">Open</span></td><td class="last">Tokenize the SAD tier (Villarreal, Valencia, Atleti). The member-owned giants — Real, Barça — have no shares to sell: Spain's biggest fanbases are supply-closed by structure.</td></tr>
+        <tr><td class="mk">Germany</td><td><span class="tier t2">Partial</span></td><td><span class="tier t1">Open</span></td><td class="last">Buy the minority economics 50+1 permits (the Bayern 8.33% template). And Germany doubles as the top demand market for Turkish supply.</td></tr>
+        <tr><td class="mk">Switzerland</td><td><span class="tier t1">Open</span></td><td><span class="tier t1">Open</span></td><td class="last">AG clubs plus native tokenized-share rails — the lowest-friction pilot issuance in Europe.</td></tr>
+        <tr><td class="mk">Japan</td><td><span class="tier t1">Open</span></td><td><span class="tier t2">Partner</span></td><td class="last">Foreign ownership just opened (Red Bull/Omiya, 2024). A J-League club token rides the SBI JV's domestic STO rails — supply and demand through one partner.</td></tr>
+        <tr><td class="mk">United States</td><td><span class="tier t2">Gated</span></td><td><span class="tier t1">Open</span></td><td class="last">Big-league equity is league-locked; independent soccer is open. The US matters more as a demand market — for its own lower-division clubs and for foreign supply (Liga MX, European clubs) sold under Reg CF/A+.</td></tr>
+        <tr><td class="mk">UAE</td><td><span class="tier t3">Closed</span></td><td><span class="tier t2">First-mover</span></td><td class="last">State-held clubs, nothing to buy — a pure demand hub: 88% expat residents buying foreign supply. (Watch Saudi privatization for future supply next door.)</td></tr>
+      </tbody>
+    </table>
+    </div>
+  </section>
+
   <!-- ==================== MARKETS ==================== -->
 
   <section class="mk-sec" id="br">
@@ -310,6 +394,7 @@ html,body,.doc{-webkit-print-color-adjust:exact;print-color-adjust:exact}
       <div class="cap">The shape it must take</div>
       <p>A locally issued <span class="amp">fixed-income mirror</span> — a tokenized CR or debênture participativa carrying the equity's economics, issued by a Brazilian securitizadora and sold on a Res. 88 platform: R$ 15M a year today, R$ 50M pending reform. The foreign token itself sells to professionals now, retail never.</p>
     </div>
+    <div class="supply"><span class="w">As supply</span><b>Open — the deepest tokenizable club equity in the atlas.</b> The SAF regime (Lei 14.193/2021) was built to sell club equity to investors, foreign included: City Group holds 90% of Bahia, Eagle 90% of Botafogo. A 2–5% SPV stake is trivial — and Brazilian SAF equity can be tokenized offshore and sold worldwide even while home retail waits on the wrapper.</div>
     <div class="facts">
       <ul class="tick">
         <li><b>Equity-linked, legally debt:</b> debênture participativa (Lei 6.404 art. 56 — Vale precedent) or CR with performance-linked remuneration (Lei 14.430/2022).</li>
@@ -333,6 +418,7 @@ html,body,.doc{-webkit-print-color-adjust:exact;print-color-adjust:exact}
       <div class="cap">The shape it must take</div>
       <p>The gating event is the <span class="amp">SPK activating art. 13</span> with a tokenized-securities communiqué. Until then: marketing geo-fence on the equity product, fan tokens stay pure utility on licensed platforms, get onto the SPK CASP track, and consider the interim play that needs no new law — routing fans to the <span class="amp">listed club shares</span> through a partner brokerage.</p>
     </div>
+    <div class="supply"><span class="w">As supply</span><b>Open — the cheapest legally-clean club equity in the study.</b> The selling lane is fenced, but the tokenizing lane is wide open: all four giants ring-fence football in BIST-listed sportif AŞs, foreign portfolio investment is free under Decree 32 (disclosure at 5%, tender only at control), and Galatasaray's association can sell a tradable block of up to ~35% while keeping 15 of 16 board seats. Türkiye is the atlas's flagship case of <b>tokenize at home, sell abroad</b> — see section 03.</div>
     <div class="facts">
       <ul class="tick">
         <li><b>Precedent that the lane will come:</b> Türkiye builds DLT rails asset-class by asset-class — digital gold got its rule (Jul 2026); equities hold the enabling clause already.</li>
@@ -355,6 +441,7 @@ html,body,.doc{-webkit-print-color-adjust:exact;print-color-adjust:exact}
       <div class="cap">The shape it must take</div>
       <p>A purpose-built <span class="amp">Delaware issuer with the club in the offering chain</span> — Reg CF now ($5M/yr, the proven fan playbook, blessed SPV), Reg A+ Tier 2 to scale ($75M/yr, audited accounts, tokenized shares Exodus-style) — with Securitize as transfer agent, broker-dealer and ATS, an on-chain-attested 506(c) accredited tranche available immediately, and ERC-3643 enforcing the Reg S geofence for the rest of the world.</p>
     </div>
+    <div class="supply"><span class="w">As supply</span><b>Gated at the top, open below.</b> Major-league equity moves only through league-approved funds with hard caps (NFL: PE ≤10%, public ownership banned, the Packers grandfathered and non-tradable; NBA/MLB/NHL ~30% aggregate) — no league permits a retail or tokenized vehicle. Genuine supply lives in independent soccer (Chattanooga, Detroit City, Oakland Roots) — which is exactly where the US demand precedents were set.</div>
     <div class="facts">
       <ul class="tick">
         <li><b>Secondary is the real gate:</b> compliant liquidity needs a broker-dealer ATS (Securitize Markets, tZERO, INX) — partner, never build.</li>
@@ -399,6 +486,7 @@ html,body,.doc{-webkit-print-color-adjust:exact;print-color-adjust:exact}
       <div class="cap">The shape it must take</div>
       <p>An EU-SPV security whose register sits with a <span class="amp">CNMV-registered ERIR</span> — or issued straight onto Securitize's DLT venue — offered via an ECSPR platform (≤€5M) or the sub-€12M exemption, with a MiFID firm intervening in the placement. Spain is the natural EEA launch market: the rail owner is already our issuance partner.</p>
     </div>
+    <div class="supply"><span class="w">As supply</span><b>Partial — SADs only.</b> Every LaLiga club is a foreign-ownable SAD (Lim/Valencia, City Group/Girona) except the four member-owned giants — Real Madrid, Barcelona, Athletic, Osasuna — which have no shares to sell. The Villarreal/Valencia/Atleti tier is the tokenizable Spain; the two biggest fanbases are supply-closed by structure.</div>
     <div class="facts">
       <ul class="tick">
         <li><b>Fanbase rails:</b> Barça, Atleti, Valencia, Sevilla fan tokens live on Socios — the equity campaign rides known audiences.</li>
@@ -420,6 +508,7 @@ html,body,.doc{-webkit-print-color-adjust:exact;print-color-adjust:exact}
       <div class="cap">The shape it must take</div>
       <p>An EU-SPV security over an <span class="amp">unlisted</span> club stake, offered via a passported ECSPR platform (≤€5M) or the sub-€12M exemption — with the token register held by an Italian-established register manager or an EU DLT venue, and a MiFID firm distributing. For listed clubs, the play is the pack and membership layer over ordinary listed shares, not a wrapper token.</p>
     </div>
+    <div class="supply"><span class="w">As supply</span><b>Open.</b> Italian clubs are ordinary SpAs that transfer freely — US funds own both Milan clubs outright (RedBird/Milan, Oaktree/Inter). Minority stakes are negotiated deals with financially motivated owners; the federation gate is honorability checks, not nationality.</div>
     <div class="facts">
       <ul class="tick">
         <li><b>Fanbase rails:</b> Juve was the first Fan Token (2018); Milan, Inter, Napoli live on Socios — the deepest token-aware fanbase in Europe.</li>
@@ -441,6 +530,7 @@ html,body,.doc{-webkit-print-color-adjust:exact;print-color-adjust:exact}
       <div class="cap">The shape it must take</div>
       <p>A sub-€12M offer of <span class="amp">DEEP-registered SPV shares</span> shaped like regulated equity crowdfunding — sold through an AMF-licensed PSFP or passported MiFID partner with the French information document. The token is merely the share register; the CASP licence plays no role in the sale.</p>
     </div>
+    <div class="supply"><span class="w">As supply</span><b>Open.</b> Clubs run football through SASP companies and foreign control is routine (Kang/Lyon, RedBird/Toulouse). The gate is DNCG financial vetting, never nationality — a minority SPV stake is a negotiated deal like any other.</div>
     <div class="facts">
       <ul class="tick">
         <li><b>Fanbase rails:</b> PSG is Socios's flagship French token — the equity campaign has a warm audience.</li>
@@ -461,6 +551,7 @@ html,body,.doc{-webkit-print-color-adjust:exact;print-color-adjust:exact}
       <div class="cap">The shape it must take</div>
       <p>A sub-€12M offer of <span class="amp">eWpG crypto securities</span> — tokenized registered shares or a share-linked bond — on a BaFin-licensed register (Cashlink/NYALA-type partner), a 3-page WIB, and distribution exclusively through a licensed German broker checking the per-investor caps.</p>
     </div>
+    <div class="supply"><span class="w">As supply</span><b>Partial — economics yes, control never.</b> 50+1 permits exactly what we buy: non-controlling economic stakes (Bayern's 8.33% Adidas/Audi/Allianz blocks are the template; BVB's free float trades daily). Voting control stays with the Verein permanently — which conveniently matches a fan-minority product. Germany is also the <b>prime demand market for Turkish supply</b> — see section 03.</div>
     <div class="facts">
       <ul class="tick">
         <li><b>Institutional cover:</b> Siemens and KfW issued eWpG paper — the rails carry blue-chip names, not crypto startups.</li>
@@ -482,6 +573,7 @@ html,body,.doc{-webkit-print-color-adjust:exact;print-color-adjust:exact}
       <div class="cap">The shape it must take</div>
       <p>For unlisted clubs: a sub-threshold CMVM-compliant offer or passported-ECSPR raise of tokenized SPV shares via a MiFID intermediary. For the big three: <span class="amp">brokered access to the listed SAD shares</span> plus the season layer — never a wrapper token.</p>
     </div>
+    <div class="supply"><span class="w">As supply</span><b>Open.</b> The big three SADs are listed with directly purchasable float (parent clubs keep control blocks); unlisted SADs are ordinary negotiated equity. Portugal supplies both listed and private club paper into any selling lane.</div>
     <div class="facts">
       <ul class="tick">
         <li><b>Crypto-friendly tax:</b> &gt;365-day crypto gains exempt for individuals — the fan-token leg breathes easy here.</li>
@@ -503,6 +595,7 @@ html,body,.doc{-webkit-print-color-adjust:exact;print-color-adjust:exact}
       <div class="cap">The shape it must take</div>
       <p>Partner-shaped: sell through an <span class="amp">FCA-authorised platform</span> (Republic Europe / Crowdcube) — under £5M as an exempt offer, above £5M via the POP lane live since Jan 2026 — with s21-compliant promotions under securities rules. No UK licence of our own is needed to launch.</p>
     </div>
+    <div class="supply"><span class="w">As supply</span><b>Open — the freest club equity in Europe.</b> Clubs are ordinary companies; Watford already sold ~10% to fans with a token option. The Football Governance Act's owners' tests bite at control levels, far above a 2–5% SPV.</div>
     <div class="facts">
       <ul class="tick">
         <li><b>Plumbing tailwind:</b> Digital Securities Sandbox live (HSBC first through Gate 2, Jul 2026); FCA extending nominee/CSD exemptions to tokenized securities (Jun 2026).</li>
@@ -524,6 +617,7 @@ html,body,.doc{-webkit-print-color-adjust:exact;print-color-adjust:exact}
       <div class="cap">The shape it must take</div>
       <p>As markets: Swiss fans, <span class="amp">≤CHF 8M self-placed</span>, open today. As homes: Switzerland for instrument elegance when passporting doesn't matter; <span class="amp">Liechtenstein for the EEA retail lane</span> — one FMA-approved prospectus covering all thirty EEA states.</p>
     </div>
+    <div class="supply"><span class="w">As supply</span><b>Open.</b> Swiss clubs are ordinary AGs, and Aktionariat's rails already tokenize Swiss company shares natively — a Swiss club would be the lowest-friction pilot issuance in Europe, though no club has done it yet.</div>
     <div class="facts">
       <ul class="tick">
         <li><b>CH exemptions:</b> ≤CHF 8M/12mo, professional investors, or CHF 100k tickets; above — prospectus reviewed by SIX/BX, not FINMA.</li>
@@ -545,6 +639,7 @@ html,body,.doc{-webkit-print-color-adjust:exact;print-color-adjust:exact}
       <div class="cap">The shape it must take</div>
       <p>An Argentine vehicle — fideicomiso financiero or SA — publicly offered under CNV's automatic/crowdfunding regimes, tokenized inside the sandbox and sold retail <span class="amp">through a registered PSAV</span>. Version one must wrap a <span class="amp">foreign</span> club stake or contractual club economics, because domestic club equity doesn't exist until the SAD litigation resolves.</p>
     </div>
+    <div class="supply"><span class="w">As supply</span><b>Closed — the exact inverse of Türkiye.</b> The demand rails are ready and the fanbase is generational, but clubs are non-profit civil associations: there is no equity anywhere in the country until the Supreme Court frees the SAD regime. Argentina sells foreign supply; it cannot yet produce its own.</div>
     <div class="facts">
       <ul class="tick">
         <li><b>Fan demand is generational:</b> Boca, River, Racing, Independiente all run Socios fan tokens — Argentina is a top-five fan-token market.</li>
@@ -566,6 +661,7 @@ html,body,.doc{-webkit-print-color-adjust:exact;print-color-adjust:exact}
       <div class="cap">The shape it must take</div>
       <p>There is no shape today. The choices are: shrink into a licensed crowdfunding offer of <span class="amp">book-entry rights</span> (~$3M cap, token off-chain), enter via the SIC once the SPV lists on a recognized foreign exchange, or stay a rights-free fan token and wait for reform.</p>
     </div>
+    <div class="supply"><span class="w">As supply</span><b>Partial — legally open, closely held.</b> Liga MX clubs are ordinary companies and foreign entry is proven at 50% (the Necaxa celebrity group, Atlético San Luis). Every share sits in private group hands, so a stake is a negotiated, league-vetted deal — tokenizable offshore and sold abroad even while Mexican retail stays fenced.</div>
     <div class="facts">
       <ul class="tick">
         <li><b>Fanbase paradox:</b> Club América, Chivas and a massive Liga MX + European-club audience — demand without a rail.</li>
@@ -585,6 +681,7 @@ html,body,.doc{-webkit-print-color-adjust:exact;print-color-adjust:exact}
       <div class="cap">The shape it must take</div>
       <p>A DIFC SPV with a <span class="amp">DFSA-approved prospectus</span>, sold through a DFSA-licensed platform with retail endorsement — entering via the Tokenisation Sandbox — then onshore expansion through the SCA security-token/ATS regime. First-mover territory: no rule blocks it, no one has done it.</p>
     </div>
+    <div class="supply"><span class="w">As supply</span><b>Closed — demand-only market.</b> Pro League clubs are royal/government-linked with no acquirable equity. (Saudi next door is shifting: PIF's big four are locked, but privatized mid-table clubs are now genuinely buyable — Al-Kholood went fully foreign-owned in 2025.) The UAE's role in this atlas is as a selling hub for foreign supply.</div>
     <div class="facts">
       <ul class="tick">
         <li><b>Regulator posture:</b> DFSA consulting on retail access to tokenized illiquid assets (2026 funds consultation) — direction of travel is toward us.</li>
@@ -605,6 +702,7 @@ html,body,.doc{-webkit-print-color-adjust:exact;print-color-adjust:exact}
       <div class="cap">The shape it must take</div>
       <p>Re-issued, not passported: a Japanese trust/SPV token over the club stake, distributed by a Type I broker — making the <span class="amp">SBI–Chiliz JV</span> the obvious and probably only vehicle. Crypto's move into the securities law (2026 amendment, effect ~2027) only strengthens this lane.</p>
     </div>
+    <div class="supply"><span class="w">As supply</span><b>Open — newly.</b> Red Bull's 100% purchase of Omiya Ardija (2024) was the first foreign sole ownership of a J-League club; the old Japanese-majority expectation no longer blocks. Most clubs are corporate-parent-held (Toyota, Panasonic tier), so stakes are negotiated — and a J-League club token would ride the same domestic STO rails the JV already reaches.</div>
     <div class="facts">
       <ul class="tick">
         <li><b>Market shape:</b> ~85% of STO volume is real-estate trust tokens — a club stake is a natural next asset class for yield-hungry retail.</li>
@@ -627,7 +725,7 @@ html,body,.doc{-webkit-print-color-adjust:exact;print-color-adjust:exact}
   </section>
 
   <section id="ranking">
-    <div class="sec-head"><div class="sec-n">03</div><h2>The distribution read — where to go first</h2></div>
+    <div class="sec-head"><div class="sec-n">04</div><h2>The distribution read — where to go first</h2></div>
     <p class="sec-sub">Crossing lane-readiness with fanbase depth. Tiers said where selling is possible; this says where it is worth it, in what order.</p>
     <div class="mathstrip">
       <div class="m"><div class="n">9</div><div class="l">Markets where a retail lane is open <b>today</b> — UK, Spain, France, Germany, Italy, Portugal, Switzerland, the US, and Brazil via the fixed-income wrapper. The constraint is our structuring, not the law.</div></div>
@@ -636,20 +734,20 @@ html,body,.doc{-webkit-print-color-adjust:exact;print-color-adjust:exact}
     </div>
     <div class="steps" style="margin-top:16px">
       <div class="step"><div class="w">Open now</div><div class="t"><b>UK</b> (Crowdcube/Republic partner — Watford proved the shape, our audience machine fixes its failure) · <b>Spain</b> (Securitize's own regulatory stack) · <b>Switzerland</b> (≤CHF 8M self-placed) · <b>US</b> (Reg CF pilot + on-chain-attested accredited tranche) · <b>Brazil</b> (professional placement today; Liqi wrapper pilot in a quarter).</div></div>
-      <div class="step"><div class="w">Build 2026–27</div><div class="t"><b>EEA at scale</b> — choose the Liechtenstein prospectus home or per-country €12M lanes, close the MiFID gap first · <b>Germany, France, Italy, Portugal</b> national retail lanes · <b>UAE</b> Tokenisation Sandbox as the first-mover flag · <b>US Reg A+</b> once the Delaware/club-chain structure is opined.</div></div>
+      <div class="step"><div class="w">Build 2026–27</div><div class="t"><b>EEA at scale</b> — choose the Liechtenstein prospectus home or per-country €12M lanes, close the MiFID gap first · <b>Germany, France, Italy, Portugal</b> national retail lanes · <b>the Türkiye→diaspora cross-flow</b> — a GSRAY tranche sold through the German and UK lanes (section 03) · <b>UAE</b> Tokenisation Sandbox as the first-mover flag · <b>US Reg A+</b> once the Delaware/club-chain structure is opined.</div></div>
       <div class="step"><div class="w">Partner-gated</div><div class="t"><b>Japan</b> — re-issuance through the SBI–Chiliz JV, the only door and we hold the key · <b>Argentina</b> — build the PSAV relationship now, launch the local vehicle when the first sandbox issuances land or the SAD ruling frees club equity.</div></div>
-      <div class="step"><div class="w">Fenced</div><div class="t"><b>Türkiye</b> — marketing geo-fence until the SPK communiqué; interim: routed brokerage into GSRAY/FENER/BJKAS/TSPOR listed shares · <b>Mexico</b> — geo-fence and monitor reform · <b>Singapore/HK</b> — professional tranches only.</div></div>
+      <div class="step"><div class="w">Fenced</div><div class="t"><b>Türkiye</b> — the <i>selling</i> lane is fenced until the SPK communiqué, but the <i>supply</i> lane is open now: the diaspora cross-flow doesn't wait for the SPK; interim domestic play: routed brokerage into the listed club shares · <b>Mexico</b> — retail fenced at home, its diaspora addressable in the US · <b>Singapore/HK</b> — professional tranches only.</div></div>
     </div>
   </section>
 
   <section style="border-bottom:none" id="steps">
-    <div class="sec-head"><div class="sec-n">04</div><h2>Next steps</h2></div>
+    <div class="sec-head"><div class="sec-n">05</div><h2>Next steps</h2></div>
     <div class="steps">
       <div class="step"><div class="w">Now</div><div class="t"><b>Close the MiFID distribution gap.</b> Partner, tie up with Securitize Europe's investment firm, or acquire — this single move unlocks Spain, Italy, France, Germany, Portugal and the EEA passport lanes. Prerequisite to everything European on this page.</div></div>
       <div class="step"><div class="w">Now</div><div class="t"><b>Liqi follow-up (Brazil):</b> instrument choice — CR with variable remuneration vs debênture participativa — with their recharacterization analysis; cap strategy (multiple patrimônios separados vs the R$ 50M reform); co-design a submission to the CVM tokenization working group's experimental regime.</div></div>
       <div class="step"><div class="w">This quarter</div><div class="t"><b>Pick the issuance home:</b> Liechtenstein (one FMA prospectus, thirty EEA states) vs Switzerland (instrument elegance, no passport) — commission the two legal opinions, including the Swiss self-placement question. Open the UK platform conversation with Republic Europe/Crowdcube in parallel.</div></div>
       <div class="step"><div class="w">This quarter</div><div class="t"><b>US structuring memo:</b> Delaware issuer with club-in-chain vs Reg CF crowdfunding vehicle — the Investment Company Act question decides which clubs can go first. Scope Securitize for transfer agent, broker-dealer and ATS.</div></div>
-      <div class="step"><div class="w">In parallel</div><div class="t"><b>UAE:</b> express interest in the DFSA Tokenisation Sandbox. <b>Japan:</b> scope the re-issuance product with the SBI JV. <b>Türkiye:</b> answer the standing question — do we seek a CASP licence under Law 7518? — and pre-position with the SPK tokenization workstream.</div></div>
+      <div class="step"><div class="w">In parallel</div><div class="t"><b>UAE:</b> express interest in the DFSA Tokenisation Sandbox. <b>Japan:</b> scope the re-issuance product with the SBI JV. <b>Türkiye:</b> answer the standing question — do we seek a CASP licence under Law 7518? — pre-position with the SPK tokenization workstream, and commission the cross-flow legal memo: non-Turkish SPV over a GSRAY tranche, offered in Germany and the UK to diaspora residents.</div></div>
       <div class="step"><div class="w">Watch</div><div class="t">CVM working-group proposal (~Sep 2026) · Res. 88 final rule · CLARITY Senate vote (~Sep 2026) · SEC innovation exemption revival · Liechtenstein's Listing-Act incorporation · Argentina's CSJN ruling on SADs · first UAE/HK retail tokenized-equity approvals.</div></div>
     </div>
   </section>
